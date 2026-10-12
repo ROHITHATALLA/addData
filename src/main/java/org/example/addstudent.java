@@ -23,7 +23,7 @@ public class addstudent extends HttpServlet {
         PrintWriter out=resp.getWriter();
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","svist@123");
+            Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/db","root","Rohitha@2389);
             String sql="insert into student(name,branch) values(?,?)";
 
             PreparedStatement ps=con.prepareStatement(sql);
